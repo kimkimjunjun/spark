@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 0, 0, 0;
+        --background-start-rgb: 214, 219, 220;
+        --background-end-rgb: 255, 255, 255;
+    }
+}
+
+body {
+    /*color: rgb(var(--foreground-rgb));*/
+    font-family: 'Pretendard', serif;
+    color: black;
+}
+
+.userpage img {
+    height: 144px;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    src: url('../public/fonts/Pretendard-Bold.woff') format("woff");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    src: url('../public/fonts/Pretendard-SemiBold.woff') format("woff");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    src: url('../public/fonts/Pretendard-Medium.woff') format("woff");
+
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    src: url('../public/fonts/Pretendard-Thin.woff') format("woff");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    src: url('../public/fonts/Pretendard-Light.woff') format("woff");
+}
+
+@font-face {
+    font-family: 'SUIT';
+    font-weight: 700;
+    src: url('../public/fonts/SUIT-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'SUIT';
+    font-weight: 600;
+    src: url('../public/fonts/SUIT-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'SUIT';
+    font-weight: 500;
+    src: url('../public/fonts/SUIT-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'SUIT';
+    font-weight: 400;
+    src: url('../public/fonts/SUIT-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'SUIT';
+    font-weight: 300;
+    src: url('../public/fonts/SUIT-Light.ttf');
+}
+
+@keyframes slideInFromTopRight {
+    from {
+        transform: translateX(100%) translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.mobileslide>.slick-list {
+    margin-right: -8px;
+    width: 442px;
+}
+
+.mobileslide>.slick-slide {
+    padding-right: 8px;
+}
+
+.desktopslide>.slick-list {
+    width: 95rem;
+    height: 324px;
+}
+
+.mypage::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.mypage::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.mypage::-webkit-scrollbar-track {
+    background-color: transparent;
+}
